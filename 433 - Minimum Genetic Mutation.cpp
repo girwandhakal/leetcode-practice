@@ -4,12 +4,13 @@
 #include <queue>        // For std::queue
 #include <unordered_map> // For std::unordered_map
 
+using namespace std;
 
 
 class Solution {
 public:
     // check if a mutation is possible
-    bool canMutate(string startGene, string endGene)
+    bool canMutate(std::string startGene, std::string endGene)
     {
         int count = 0;
         for(int i = 0; i < startGene.length(); i++)
