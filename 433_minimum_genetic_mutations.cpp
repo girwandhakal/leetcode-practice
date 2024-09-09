@@ -1,8 +1,8 @@
-#include <string>       // For std::string
-#include <iostream>     // For std::cout, std::cin, etc. (optional in your current code)
-#include <vector>       // For std::vector
-#include <queue>        // For std::queue
-#include <unordered_map> // For std::unordered_map
+#include <string>       
+#include <iostream>     
+#include <vector>       
+#include <queue>       
+#include <unordered_map> 
 
 using namespace std;
 
@@ -65,5 +65,8 @@ public:
 };
 
 int main(){
-    
+    Solution s1;
+    string startGene = "AACCGGTT", endGene = "AAACGGTA"; 
+    vector<string> bank = {"AACCGGTA","AACCGCTA","AAACGGTA"};
+    cout << s1.minMutation(startGene, endGene, bank) << endl;
 }
